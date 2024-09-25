@@ -1,0 +1,140 @@
+/* Base Styles */
+:root {
+    --bg-color: black;
+    --text-color: white;
+    --tooltip-bg: #333;
+    --link-hover-color: rgba(255, 255, 255, 0.8);
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+.vi {
+    margin-left: 100px;
+    display: flex;
+}
+
+.i2 {
+    width: 15vw;
+    height: auto;
+    border-radius: 50%;
+    margin-left: 3cm;
+    margin-top: 1cm;
+}
+
+.h {
+    position: absolute;
+    top: 7cm;
+    left: 13cm;
+    text-align: center;
+    color: var(--text-color);
+}
+
+.d2 {
+    width: 25%;
+    height: 630px;
+    background-color: var(--bg-color);
+}
+
+.nav {
+    overflow: hidden;
+    background-color: transparent;
+    margin-left: 3cm;
+}
+
+.nav a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    transition: color 0.3s ease;
+}
+
+.nav a:hover {
+    text-decoration: underline;
+    text-decoration-color: var(--text-color);
+    text-decoration-thickness: 3px;
+    color: var(--link-hover-color);
+}
+
+.hi1 {
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.hi1:hover {
+    text-decoration: underline;
+    text-decoration-color: var(--text-color);
+    text-decoration-thickness: 3px;
+}
+
+.info-text {
+    font-size: 18px;
+    cursor: pointer;
+    color: var(--text-color);
+    position: relative;
+}
+
+.info-text:hover .tooltip {
+    display: block; /* Show tooltip on hover */
+}
+
+.tooltip {
+    position: absolute;
+    background-color: var(--tooltip-bg);
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 14px;
+    display: none;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .vi {
+        margin-left: 20px; /* Adjust margin for smaller screens */
+        flex-direction: column; /* Stack items vertically */
+    }
+
+    .i2 {
+        width: 40vw; /* Adjust size for smaller screens */
+        margin-left: 0; /* Remove left margin */
+    }
+
+    .h {
+        top: 5cm; /* Adjust position for smaller screens */
+        left: 10%; /* Center alignment */
+    }
+
+    .nav {
+        margin-left: 0; /* Center nav for smaller screens */
+        text-align: center; /* Center the links */
+    }
+
+    .nav a {
+        font-size: 18px; /* Slightly smaller text */
+    }
+
+    .d2 {
+        width: 90%; /* Make the side div take more space */
+        height: auto; /* Adjust height */
+    }
+}
+
+@media (max-width: 480px) {
+    .nav a {
+        font-size: 16px; /* Even smaller text for mobile */
+    }
+
+    .h {
+        font-size: 16px; /* Adjust heading size */
+    }
+
+    .info-text {
+        font-size: 16px; /* Smaller text for info */
+    }
+}
+

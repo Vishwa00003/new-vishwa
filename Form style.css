@@ -1,0 +1,131 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #72efb0, #91a63f);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: #fff;
+}
+.contactform {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%;
+    padding: 60px;
+}
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+label{
+    color: #000;
+}
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 2px solid #72c6ef;
+    border-radius: 8px;
+    transition: border-color 0.3s;
+}
+input:focus, textarea:focus {
+    border-color: #3f87a6;
+    outline: none;
+}
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #3f87a6;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+button:hover {
+    background-color: #2a5d75;
+}
+.error {
+    color: #d9534f;
+    font-size: 0.9em;
+}
+span{
+    margin: 0;
+    padding: 0;
+    color: red;
+}
+.name{
+    padding-bottom:10px ;
+}
+body.dark-mode {
+    background: #1a1a1a;
+    color: #fff;
+}
+
+.contactform.dark-mode {
+    background: rgba(30, 30, 30, 0.9);
+    border: 1px solid #444;
+}
+
+.contactform.dark-mode label {
+    color: #fff;
+}
+
+.contactform.dark-mode input,
+.contactform.dark-mode textarea {
+    background: #333;
+    color: #fff;
+    border: 2px solid #555;
+}
+
+.contactform.dark-mode input:focus,
+.contactform.dark-mode textarea:focus {
+    border-color: #72c6ef;
+}
+
+.contactform.dark-mode button {
+    background-color: #5b7f97;
+}
+
+.contactform.dark-mode button:hover {
+    background-color: #456b79;
+}
+@media (max-width: 600px) {
+    .contactform {
+        padding: 30px; 
+        border-radius: 20px;
+    }
+
+    input, textarea {
+        padding: 10px; 
+    }
+
+    button {
+        padding: 10px; 
+        font-size: 14px; 
+    }
+}
+
+@media (max-width: 400px) {
+    .contactform {
+        padding: 20px; 
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    button {
+        font-size: 12px; 
+    }
+}
